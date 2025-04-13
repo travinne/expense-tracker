@@ -50,7 +50,7 @@ function Input({onAddExpense}) {
                 <input type="date"placeholder='mm/dd/yyyy' name='date' 
                 onChange={handleChange} required/>
 
-                <button type='submit'>submit</button>
+                <button type='submit' className='submit'>submit</button>
             </form>
     </div>
 

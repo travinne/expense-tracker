@@ -2,7 +2,7 @@ import React from "react"
 
 const Table = ({headers,data}) => {
   return(
-    <table>
+    <table className="table">
       <thead>
         <tr>
           {headers.map((header,headIndex) =>

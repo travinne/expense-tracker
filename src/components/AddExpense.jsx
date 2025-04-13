@@ -1,10 +1,10 @@
 import React from 'react'
 import Input from './Input'
 
-function AddExpense() {
+function AddExpense({onAddExpense}) {
   return (
-    <div>
-      <Input/>
+    <div className='addexpense'>
+      <Input onAddExpense={onAddExpense}/>
     </div>
   )
 }

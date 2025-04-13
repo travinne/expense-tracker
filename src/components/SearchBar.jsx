@@ -1,20 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-function SearchBar() {
-  const [input, setInput] = useState('')
-  const fetchData = (value) =>{
-    fetch()
-  }
-
-  const handleChange = (value) => {
-    setInput(value);
-    fetchData(value);
+function SearchBar({search, setSearch}) {
+  const handleChange = (e) => {
+    setSearch(e.target.value);
   }
 
   return (
     <> 
-    <div className='sarchbar'>Search bar</div>
-    <input type="text" placeholder='Type to search...' value={input} onChange={(e) => setInput(e.target.value)} />
+    <div className='searchbar'>Search bar</div>
+    <input type="text" 
+    placeholder='Type to search...'
+     value={search} 
+     onChange={handleChange} />
     </>
    
   )
